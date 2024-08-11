@@ -1,0 +1,6 @@
+[
+  {
+    "name": "intensity",
+    "pattern": "(\\brất\\b|\\bquá\\b|\\bthật\\b|\\bhơi\\b|\\bcực\\b|\\bcực\\ kì\\b)"
+  }
+]

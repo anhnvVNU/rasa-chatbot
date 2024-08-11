@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: feedback_positive
+  examples: |
+    - Tôi [rất](intensity) hài lòng với [dịch vụ](aspect)
+    - [Dịch vụ](aspect) [rất](intensity) tuyệt vời
+    - Tôi cảm thấy [rất](intensity) tốt về trải nghiệm này
+    - [Nhân viên phục vụ](aspect) [rất](intensity) nhiệt tình và chu đáo
+    - Chất lượng [sản phẩm](aspect) [rất](intensity) tốt
+    - Tôi sẽ giới thiệu cho bạn bè
+    - Đây là trải nghiệm tốt nhất mà tôi từng có
+    - [Dịch vụ](aspect) [rất](intensity) xuất sắc
+    - Tôi [rất](intensity) ấn tượng với sự chuyên nghiệp của các bạn
+    - Tôi [rất](intensity) vui với kết quả đạt được
+    - [Dịch vụ](aspect) không tệ
+    - [Dịch vụ](aspect) ổn, không có gì để phàn nàn
+    - Chất lượng [sản phẩm](aspect) đạt yêu cầu
+    - Tôi [rất](intensity) thích [dịch vụ](aspect) của các bạn
+    - [Nhân viên phục vụ](aspect) [rất](intensity) thân thiện
+    - [Dịch vụ](aspect) nhanh chóng và hiệu quả
+    - [Sản phẩm](aspect) vượt xa mong đợi của tôi
+    - [Nhân viên](aspect) làm việc [rất](intensity) chuyên nghiệp
+    - [Dịch vụ](aspect) [rất](intensity) đáng khen ngợi
+    - [Sản phẩm](aspect) [rất](intensity) tuyệt
+    - Tôi [rất](intensity) hài lòng với [dịch vụ](aspect)
+    - [Nhân viên phục vụ](aspect) [rất](intensity) thân thiện
+
+- intent: feedback_negative
+  examples: |
+    - Tôi không hài lòng với [dịch vụ](aspect)
+    - [Dịch vụ](aspect) [rất](intensity) tệ
+    - Tôi [rất](intensity) thất vọng với trải nghiệm này
+    - [Nhân viên phục vụ](aspect) không thân thiện
+    - Chất lượng [sản phẩm](aspect) kém
+    - Tôi sẽ không bao giờ sử dụng [dịch vụ](aspect) của các bạn nữa
+    - Đây là trải nghiệm tệ nhất mà tôi từng có
+    - [Dịch vụ](aspect) [rất](intensity) chậm chạp
+    - Tôi không ấn tượng với sự phục vụ của các bạn
+    - Tôi [rất](intensity) buồn với kết quả này
+    - [Dịch vụ](aspect) chưa tốt
+    - [Dịch vụ](aspect) không tốt
+    - [Dịch vụ](aspect) cần cải thiện thêm
+    - Tôi không hài lòng lắm về [dịch vụ](aspect)
+    - [Sản phẩm](aspect) không đạt yêu cầu
+    - [Nhân viên phục vụ](aspect) thiếu chuyên nghiệp
+    - [Dịch vụ](aspect) [rất](intensity) chậm
+    - Chất lượng [sản phẩm](aspect) [rất](intensity) kém
+    - [Dịch vụ](aspect) không như mong đợi
+    - Tôi thấy [dịch vụ](aspect) [rất](intensity) phiền phức
+    - Tôi [rất](intensity) không hài lòng về [dịch vụ](aspect)
+    - [Sản phẩm](aspect) [rất](intensity) kém
+    - [Dịch vụ](aspect) [rất](intensity) đáng thất vọng
+
+- lookup: intensity
+    - rất
+    - quá
+    - thật
+    - hơi
+    - cực
+    - cực kì

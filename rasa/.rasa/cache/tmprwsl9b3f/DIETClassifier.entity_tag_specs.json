@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-aspect",
+      "2": "I-aspect",
+      "3": "L-aspect",
+      "4": "U-aspect",
+      "5": "B-intensity",
+      "6": "I-intensity",
+      "7": "L-intensity",
+      "8": "U-intensity",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-aspect": 1,
+      "I-aspect": 2,
+      "L-aspect": 3,
+      "U-aspect": 4,
+      "B-intensity": 5,
+      "I-intensity": 6,
+      "L-intensity": 7,
+      "U-intensity": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
